@@ -7,5 +7,5 @@ TEST(Addition, CanAddTwoNumbers) {
 }
 
 TEST(Multiply, CanMulTwoNumbers) {
-	EXPECT_EQ(mul(3, 5), 15);
+  EXPECT_EQ(mul(3, 5), 15);
 }
