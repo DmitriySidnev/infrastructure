@@ -1,6 +1,6 @@
 #include <vector>
 
-std::vector<int> merge(std::vector<int>& v, int l, int m, int r) {
+std::vector<int> merge(std::vector<int> v, int l, int m, int r) {
   int i = l, j = m + 1, k = l;
   std::vector<int> a(m - l + 1);
   std::vector<int> b(r - m);
@@ -15,8 +15,7 @@ std::vector<int> merge(std::vector<int>& v, int l, int m, int r) {
     if (i < a.size() && (j >= b.size() || a[i] < b[j])) {
       v[k] = a[i];
       i++;
-    }
-    else if (j < b.size() && (i >= a.size() || b[j] <= a[i])) {
+    } else if (j < b.size() && (i >= a.size() || b[j] <= a[i])) {
       v[k] = b[j];
       j++;
     }
