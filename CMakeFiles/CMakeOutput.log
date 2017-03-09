@@ -1,0 +1,366 @@
+The system is: Windows - 6.3.9600 - AMD64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+0
+Microsoft (R) Build Engine ���ᨨ 14.0.25420.1
+(C) ��௮��� �������� (Microsoft Corporation). �� �ࠢ� ���饭�.
+
+���ઠ ���� 08.03.2017 21:01:40.
+������� ��ꥪ� "_ConvertPdbFiles", 㪠����� � ��ਡ�� BeforeTargets ��� "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (34,37)", �� ������� � �஥�� � �㤥� �ய�饭.
+������� ��ꥪ� "_CollectPdbFiles", 㪠����� � ��ਡ�� AfterTargets ��� "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (34,70)", �� ������� � �஥�� � �㤥� �ய�饭.
+������� ��ꥪ� "_CollectMdbFiles", 㪠����� � ��ਡ�� BeforeTargets ��� "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (41,38)", �� ������� � �஥�� � �㤥� �ய�饭.
+������� ��ꥪ� "_CopyMdbFiles", 㪠����� � ��ਡ�� AfterTargets ��� "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (41,71)", �� ������� � �஥�� � �㤥� �ய�饭.
+�஥�� "C:\C++\GitHub\infrastructure\CMakeFiles\3.8.0-rc2\CompilerIdC\CompilerIdC.vcxproj" � 㧫� 1 (楫��� ��ꥪ�� �� 㬮�砭��).
+PrepareForBuild:
+  �������� ��⠫��� "Debug\".
+  �������� ��⠫��� "Debug\CompilerIdC.tlog\".
+InitializeBuildStatus:
+  �������� "Debug\CompilerIdC.tlog\unsuccessfulbuild", ⠪ ��� �뫮 ������ "AlwaysCreate".
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /nologo /W0 /WX- /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue CMakeCCompilerId.c
+  CMakeCCompilerId.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdC.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCCompilerId.obj
+  CompilerIdC.vcxproj -> C:\C++\GitHub\infrastructure\CMakeFiles\3.8.0-rc2\CompilerIdC\.\CompilerIdC.exe
+PostBuildEvent:
+  for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+  :VCEnd
+  CMAKE_C_COMPILER=C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\cl.exe
+FinalizeBuildStatus:
+  ���� "Debug\CompilerIdC.tlog\unsuccessfulbuild" 㤠�����.
+  ���饭�� � "Debug\CompilerIdC.tlog\CompilerIdC.lastbuildstate".
+���ઠ �஥�� "C:\C++\GitHub\infrastructure\CMakeFiles\3.8.0-rc2\CompilerIdC\CompilerIdC.vcxproj" �����襭� (楫��� ��ꥪ�� �� 㬮�砭��).
+
+���ઠ �ᯥ譮 �����襭�.
+    �।�०�����: 0
+    �訡��: 0
+
+����祭��� �६�: 00:00:00.66
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+
+The C compiler identification is MSVC, found in "C:/C++/GitHub/infrastructure/CMakeFiles/3.8.0-rc2/CompilerIdC/CompilerIdC.exe"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+0
+Microsoft (R) Build Engine ���ᨨ 14.0.25420.1
+(C) ��௮��� �������� (Microsoft Corporation). �� �ࠢ� ���饭�.
+
+���ઠ ���� 08.03.2017 21:01:41.
+������� ��ꥪ� "_ConvertPdbFiles", 㪠����� � ��ਡ�� BeforeTargets ��� "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (34,37)", �� ������� � �஥�� � �㤥� �ய�饭.
+������� ��ꥪ� "_CollectPdbFiles", 㪠����� � ��ਡ�� AfterTargets ��� "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (34,70)", �� ������� � �஥�� � �㤥� �ய�饭.
+������� ��ꥪ� "_CollectMdbFiles", 㪠����� � ��ਡ�� BeforeTargets ��� "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (41,38)", �� ������� � �஥�� � �㤥� �ய�饭.
+������� ��ꥪ� "_CopyMdbFiles", 㪠����� � ��ਡ�� AfterTargets ��� "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (41,71)", �� ������� � �஥�� � �㤥� �ய�饭.
+�஥�� "C:\C++\GitHub\infrastructure\CMakeFiles\3.8.0-rc2\CompilerIdCXX\CompilerIdCXX.vcxproj" � 㧫� 1 (楫��� ��ꥪ�� �� 㬮�砭��).
+PrepareForBuild:
+  �������� ��⠫��� "Debug\".
+  �������� ��⠫��� "Debug\CompilerIdCXX.tlog\".
+InitializeBuildStatus:
+  �������� "Debug\CompilerIdCXX.tlog\unsuccessfulbuild", ⠪ ��� �뫮 ������ "AlwaysCreate".
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /nologo /W0 /WX- /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:queue CMakeCXXCompilerId.cpp
+  CMakeCXXCompilerId.cpp
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdCXX.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCXXCompilerId.obj
+  CompilerIdCXX.vcxproj -> C:\C++\GitHub\infrastructure\CMakeFiles\3.8.0-rc2\CompilerIdCXX\.\CompilerIdCXX.exe
+PostBuildEvent:
+  for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+  :VCEnd
+  CMAKE_CXX_COMPILER=C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\cl.exe
+FinalizeBuildStatus:
+  ���� "Debug\CompilerIdCXX.tlog\unsuccessfulbuild" 㤠�����.
+  ���饭�� � "Debug\CompilerIdCXX.tlog\CompilerIdCXX.lastbuildstate".
+���ઠ �஥�� "C:\C++\GitHub\infrastructure\CMakeFiles\3.8.0-rc2\CompilerIdCXX\CompilerIdCXX.vcxproj" �����襭� (楫��� ��ꥪ�� �� 㬮�砭��).
+
+���ઠ �ᯥ譮 �����襭�.
+    �।�०�����: 0
+    �訡��: 0
+
+����祭��� �६�: 00:00:00.64
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+
+The CXX compiler identification is MSVC, found in "C:/C++/GitHub/infrastructure/CMakeFiles/3.8.0-rc2/CompilerIdCXX/CompilerIdCXX.exe"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: C:/C++/GitHub/infrastructure/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_62301.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine версии 14.0.25420.1
+(C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+
+Сборка начата 08.03.2017 21:01:42.
+Целевой объект "_ConvertPdbFiles", указанный в атрибуте BeforeTargets для "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (34,37)", не существует в проекте и будет пропущен.
+Целевой объект "_CollectPdbFiles", указанный в атрибуте AfterTargets для "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (34,70)", не существует в проекте и будет пропущен.
+Целевой объект "_CollectMdbFiles", указанный в атрибуте BeforeTargets для "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (41,38)", не существует в проекте и будет пропущен.
+Целевой объект "_CopyMdbFiles", указанный в атрибуте AfterTargets для "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (41,71)", не существует в проекте и будет пропущен.
+Проект "C:\C++\GitHub\infrastructure\CMakeFiles\CMakeTmp\cmTC_62301.vcxproj" в узле 1 (целевые объекты по умолчанию).
+PrepareForBuild:
+  Создание каталога "cmTC_62301.dir\Debug\".
+  Создание каталога "C:\C++\GitHub\infrastructure\CMakeFiles\CMakeTmp\Debug\".
+  Создание каталога "cmTC_62301.dir\Debug\cmTC_62301.tlog\".
+InitializeBuildStatus:
+  Создание "cmTC_62301.dir\Debug\cmTC_62301.tlog\unsuccessfulbuild", так как было задано "AlwaysCreate".
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_62301.dir\Debug\\" /Fd"cmTC_62301.dir\Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue C:\C++\GitHub\infrastructure\CMakeFiles\CMakeTmp\testCCompiler.c
+  Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.00.24213.1 для x86
+  (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_62301.dir\Debug\\" /Fd"cmTC_62301.dir\Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue C:\C++\GitHub\infrastructure\CMakeFiles\CMakeTmp\testCCompiler.c
+  
+  testCCompiler.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\C++\GitHub\infrastructure\CMakeFiles\CMakeTmp\Debug\cmTC_62301.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/C++/GitHub/infrastructure/CMakeFiles/CMakeTmp/Debug/cmTC_62301.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/C++/GitHub/infrastructure/CMakeFiles/CMakeTmp/Debug/cmTC_62301.lib" /MACHINE:X86 /SAFESEH   /machine:X86 cmTC_62301.dir\Debug\testCCompiler.obj
+  cmTC_62301.vcxproj -> C:\C++\GitHub\infrastructure\CMakeFiles\CMakeTmp\Debug\cmTC_62301.exe
+FinalizeBuildStatus:
+  Файл "cmTC_62301.dir\Debug\cmTC_62301.tlog\unsuccessfulbuild" удаляется.
+  Обращение к "cmTC_62301.dir\Debug\cmTC_62301.tlog\cmTC_62301.lastbuildstate".
+Сборка проекта "C:\C++\GitHub\infrastructure\CMakeFiles\CMakeTmp\cmTC_62301.vcxproj" завершена (целевые объекты по умолчанию).
+
+Сборка успешно завершена.
+    Предупреждений: 0
+    Ошибок: 0
+
+Затраченное время: 00:00:00.98
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: C:/C++/GitHub/infrastructure/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_687b7.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine версии 14.0.25420.1
+(C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+
+Сборка начата 08.03.2017 21:01:44.
+Целевой объект "_ConvertPdbFiles", указанный в атрибуте BeforeTargets для "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (34,37)", не существует в проекте и будет пропущен.
+Целевой объект "_CollectPdbFiles", указанный в атрибуте AfterTargets для "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (34,70)", не существует в проекте и будет пропущен.
+Целевой объект "_CollectMdbFiles", указанный в атрибуте BeforeTargets для "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (41,38)", не существует в проекте и будет пропущен.
+Целевой объект "_CopyMdbFiles", указанный в атрибуте AfterTargets для "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (41,71)", не существует в проекте и будет пропущен.
+Проект "C:\C++\GitHub\infrastructure\CMakeFiles\CMakeTmp\cmTC_687b7.vcxproj" в узле 1 (целевые объекты по умолчанию).
+PrepareForBuild:
+  Создание каталога "cmTC_687b7.dir\Debug\".
+  Создание каталога "C:\C++\GitHub\infrastructure\CMakeFiles\CMakeTmp\Debug\".
+  Создание каталога "cmTC_687b7.dir\Debug\cmTC_687b7.tlog\".
+InitializeBuildStatus:
+  Создание "cmTC_687b7.dir\Debug\cmTC_687b7.tlog\unsuccessfulbuild", так как было задано "AlwaysCreate".
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_687b7.dir\Debug\\" /Fd"cmTC_687b7.dir\Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue "C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCCompilerABI.c"
+  Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.00.24213.1 для x86
+  (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_687b7.dir\Debug\\" /Fd"cmTC_687b7.dir\Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue "C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCCompilerABI.c"
+  
+  CMakeCCompilerABI.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\C++\GitHub\infrastructure\CMakeFiles\CMakeTmp\Debug\cmTC_687b7.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/C++/GitHub/infrastructure/CMakeFiles/CMakeTmp/Debug/cmTC_687b7.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/C++/GitHub/infrastructure/CMakeFiles/CMakeTmp/Debug/cmTC_687b7.lib" /MACHINE:X86 /SAFESEH   /machine:X86 cmTC_687b7.dir\Debug\CMakeCCompilerABI.obj
+  cmTC_687b7.vcxproj -> C:\C++\GitHub\infrastructure\CMakeFiles\CMakeTmp\Debug\cmTC_687b7.exe
+FinalizeBuildStatus:
+  Файл "cmTC_687b7.dir\Debug\cmTC_687b7.tlog\unsuccessfulbuild" удаляется.
+  Обращение к "cmTC_687b7.dir\Debug\cmTC_687b7.tlog\cmTC_687b7.lastbuildstate".
+Сборка проекта "C:\C++\GitHub\infrastructure\CMakeFiles\CMakeTmp\cmTC_687b7.vcxproj" завершена (целевые объекты по умолчанию).
+
+Сборка успешно завершена.
+    Предупреждений: 0
+    Ошибок: 0
+
+Затраченное время: 00:00:00.73
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: C:/C++/GitHub/infrastructure/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_c932f.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine версии 14.0.25420.1
+(C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+
+Сборка начата 08.03.2017 21:01:45.
+Целевой объект "_ConvertPdbFiles", указанный в атрибуте BeforeTargets для "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (34,37)", не существует в проекте и будет пропущен.
+Целевой объект "_CollectPdbFiles", указанный в атрибуте AfterTargets для "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (34,70)", не существует в проекте и будет пропущен.
+Целевой объект "_CollectMdbFiles", указанный в атрибуте BeforeTargets для "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (41,38)", не существует в проекте и будет пропущен.
+Целевой объект "_CopyMdbFiles", указанный в атрибуте AfterTargets для "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (41,71)", не существует в проекте и будет пропущен.
+Проект "C:\C++\GitHub\infrastructure\CMakeFiles\CMakeTmp\cmTC_c932f.vcxproj" в узле 1 (целевые объекты по умолчанию).
+PrepareForBuild:
+  Создание каталога "cmTC_c932f.dir\Debug\".
+  Создание каталога "C:\C++\GitHub\infrastructure\CMakeFiles\CMakeTmp\Debug\".
+  Создание каталога "cmTC_c932f.dir\Debug\cmTC_c932f.tlog\".
+InitializeBuildStatus:
+  Создание "cmTC_c932f.dir\Debug\cmTC_c932f.tlog\unsuccessfulbuild", так как было задано "AlwaysCreate".
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_c932f.dir\Debug\\" /Fd"cmTC_c932f.dir\Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:queue C:\C++\GitHub\infrastructure\CMakeFiles\CMakeTmp\testCXXCompiler.cxx
+  Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.00.24213.1 для x86
+  (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_c932f.dir\Debug\\" /Fd"cmTC_c932f.dir\Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:queue C:\C++\GitHub\infrastructure\CMakeFiles\CMakeTmp\testCXXCompiler.cxx
+  
+  testCXXCompiler.cxx
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\C++\GitHub\infrastructure\CMakeFiles\CMakeTmp\Debug\cmTC_c932f.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/C++/GitHub/infrastructure/CMakeFiles/CMakeTmp/Debug/cmTC_c932f.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/C++/GitHub/infrastructure/CMakeFiles/CMakeTmp/Debug/cmTC_c932f.lib" /MACHINE:X86 /SAFESEH   /machine:X86 cmTC_c932f.dir\Debug\testCXXCompiler.obj
+  cmTC_c932f.vcxproj -> C:\C++\GitHub\infrastructure\CMakeFiles\CMakeTmp\Debug\cmTC_c932f.exe
+FinalizeBuildStatus:
+  Файл "cmTC_c932f.dir\Debug\cmTC_c932f.tlog\unsuccessfulbuild" удаляется.
+  Обращение к "cmTC_c932f.dir\Debug\cmTC_c932f.tlog\cmTC_c932f.lastbuildstate".
+Сборка проекта "C:\C++\GitHub\infrastructure\CMakeFiles\CMakeTmp\cmTC_c932f.vcxproj" завершена (целевые объекты по умолчанию).
+
+Сборка успешно завершена.
+    Предупреждений: 0
+    Ошибок: 0
+
+Затраченное время: 00:00:00.76
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: C:/C++/GitHub/infrastructure/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_958df.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine версии 14.0.25420.1
+(C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+
+Сборка начата 08.03.2017 21:01:46.
+Целевой объект "_ConvertPdbFiles", указанный в атрибуте BeforeTargets для "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (34,37)", не существует в проекте и будет пропущен.
+Целевой объект "_CollectPdbFiles", указанный в атрибуте AfterTargets для "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (34,70)", не существует в проекте и будет пропущен.
+Целевой объект "_CollectMdbFiles", указанный в атрибуте BeforeTargets для "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (41,38)", не существует в проекте и будет пропущен.
+Целевой объект "_CopyMdbFiles", указанный в атрибуте AfterTargets для "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (41,71)", не существует в проекте и будет пропущен.
+Проект "C:\C++\GitHub\infrastructure\CMakeFiles\CMakeTmp\cmTC_958df.vcxproj" в узле 1 (целевые объекты по умолчанию).
+PrepareForBuild:
+  Создание каталога "cmTC_958df.dir\Debug\".
+  Создание каталога "C:\C++\GitHub\infrastructure\CMakeFiles\CMakeTmp\Debug\".
+  Создание каталога "cmTC_958df.dir\Debug\cmTC_958df.tlog\".
+InitializeBuildStatus:
+  Создание "cmTC_958df.dir\Debug\cmTC_958df.tlog\unsuccessfulbuild", так как было задано "AlwaysCreate".
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_958df.dir\Debug\\" /Fd"cmTC_958df.dir\Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:queue "C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCXXCompilerABI.cpp"
+  Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.00.24213.1 для x86
+  (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_958df.dir\Debug\\" /Fd"cmTC_958df.dir\Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:queue "C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCXXCompilerABI.cpp"
+  
+  CMakeCXXCompilerABI.cpp
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\C++\GitHub\infrastructure\CMakeFiles\CMakeTmp\Debug\cmTC_958df.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/C++/GitHub/infrastructure/CMakeFiles/CMakeTmp/Debug/cmTC_958df.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/C++/GitHub/infrastructure/CMakeFiles/CMakeTmp/Debug/cmTC_958df.lib" /MACHINE:X86 /SAFESEH   /machine:X86 cmTC_958df.dir\Debug\CMakeCXXCompilerABI.obj
+  cmTC_958df.vcxproj -> C:\C++\GitHub\infrastructure\CMakeFiles\CMakeTmp\Debug\cmTC_958df.exe
+FinalizeBuildStatus:
+  Файл "cmTC_958df.dir\Debug\cmTC_958df.tlog\unsuccessfulbuild" удаляется.
+  Обращение к "cmTC_958df.dir\Debug\cmTC_958df.tlog\cmTC_958df.lastbuildstate".
+Сборка проекта "C:\C++\GitHub\infrastructure\CMakeFiles\CMakeTmp\cmTC_958df.vcxproj" завершена (целевые объекты по умолчанию).
+
+Сборка успешно завершена.
+    Предупреждений: 0
+    Ошибок: 0
+
+Затраченное время: 00:00:00.75
+
+
+
+
+Detecting CXX [] compiler features compiled with the following output:
+Change Dir: C:/C++/GitHub/infrastructure/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_8a80b.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine версии 14.0.25420.1
+(C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+
+Сборка начата 08.03.2017 21:01:47.
+Целевой объект "_ConvertPdbFiles", указанный в атрибуте BeforeTargets для "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (34,37)", не существует в проекте и будет пропущен.
+Целевой объект "_CollectPdbFiles", указанный в атрибуте AfterTargets для "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (34,70)", не существует в проекте и будет пропущен.
+Целевой объект "_CollectMdbFiles", указанный в атрибуте BeforeTargets для "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (41,38)", не существует в проекте и будет пропущен.
+Целевой объект "_CopyMdbFiles", указанный в атрибуте AfterTargets для "C:\Program Files (x86)\MSBuild\14.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (41,71)", не существует в проекте и будет пропущен.
+Проект "C:\C++\GitHub\infrastructure\CMakeFiles\CMakeTmp\cmTC_8a80b.vcxproj" в узле 1 (целевые объекты по умолчанию).
+PrepareForBuild:
+  Создание каталога "cmTC_8a80b.dir\Debug\".
+  Создание каталога "C:\C++\GitHub\infrastructure\CMakeFiles\CMakeTmp\Debug\".
+  Создание каталога "cmTC_8a80b.dir\Debug\cmTC_8a80b.tlog\".
+InitializeBuildStatus:
+  Создание "cmTC_8a80b.dir\Debug\cmTC_8a80b.tlog\unsuccessfulbuild", так как было задано "AlwaysCreate".
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_8a80b.dir\Debug\\" /Fd"cmTC_8a80b.dir\Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:queue C:\C++\GitHub\infrastructure\CMakeFiles\feature_tests.cxx
+  Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.00.24213.1 для x86
+  (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_8a80b.dir\Debug\\" /Fd"cmTC_8a80b.dir\Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:queue C:\C++\GitHub\infrastructure\CMakeFiles\feature_tests.cxx
+  
+  feature_tests.cxx
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\C++\GitHub\infrastructure\CMakeFiles\CMakeTmp\Debug\cmTC_8a80b.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/C++/GitHub/infrastructure/CMakeFiles/CMakeTmp/Debug/cmTC_8a80b.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/C++/GitHub/infrastructure/CMakeFiles/CMakeTmp/Debug/cmTC_8a80b.lib" /MACHINE:X86 /SAFESEH   /machine:X86 cmTC_8a80b.dir\Debug\feature_tests.obj
+  cmTC_8a80b.vcxproj -> C:\C++\GitHub\infrastructure\CMakeFiles\CMakeTmp\Debug\cmTC_8a80b.exe
+FinalizeBuildStatus:
+  Файл "cmTC_8a80b.dir\Debug\cmTC_8a80b.tlog\unsuccessfulbuild" удаляется.
+  Обращение к "cmTC_8a80b.dir\Debug\cmTC_8a80b.tlog\cmTC_8a80b.lastbuildstate".
+Сборка проекта "C:\C++\GitHub\infrastructure\CMakeFiles\CMakeTmp\cmTC_8a80b.vcxproj" завершена (целевые объекты по умолчанию).
+
+Сборка успешно завершена.
+    Предупреждений: 0
+    Ошибок: 0
+
+Затраченное время: 00:00:00.75
+
+
+    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:1cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:1cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:1cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:1cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:1cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:1cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:1cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:1cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:1cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates

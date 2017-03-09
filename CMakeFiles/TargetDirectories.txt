@@ -1,0 +1,6 @@
+C:/C++/GitHub/infrastructure/CMakeFiles/ALL_BUILD.dir
+C:/C++/GitHub/infrastructure/CMakeFiles/ZERO_CHECK.dir
+C:/C++/GitHub/infrastructure/3rdparty/gtest/CMakeFiles/gtest.dir
+C:/C++/GitHub/infrastructure/src/CMakeFiles/code.dir
+C:/C++/GitHub/infrastructure/app/CMakeFiles/app.dir
+C:/C++/GitHub/infrastructure/test/CMakeFiles/mytest.dir
