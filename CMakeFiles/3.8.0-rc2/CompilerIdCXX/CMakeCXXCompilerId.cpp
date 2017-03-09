@@ -33,7 +33,7 @@
 #  define COMPILER_VERSION_TWEAK DEC(__INTEL_COMPILER_BUILD_DATE)
 # endif
 # if defined(_MSC_VER)
-   /* _MSC_VER = VVRR */
+  /* _MSC_VER = VVRR */
 #  define SIMULATE_VERSION_MAJOR DEC(_MSC_VER / 100)
 #  define SIMULATE_VERSION_MINOR DEC(_MSC_VER % 100)
 # endif
@@ -60,7 +60,7 @@
 
 #elif defined(__WATCOMC__) && __WATCOMC__ < 1200
 # define COMPILER_ID "Watcom"
-   /* __WATCOMC__ = VVRR */
+  /* __WATCOMC__ = VVRR */
 # define COMPILER_VERSION_MAJOR DEC(__WATCOMC__ / 100)
 # define COMPILER_VERSION_MINOR DEC((__WATCOMC__ / 10) % 10)
 # if (__WATCOMC__ % 10) > 0
@@ -69,7 +69,7 @@
 
 #elif defined(__WATCOMC__)
 # define COMPILER_ID "OpenWatcom"
-   /* __WATCOMC__ = VVRP + 1100 */
+  /* __WATCOMC__ = VVRP + 1100 */
 # define COMPILER_VERSION_MAJOR DEC((__WATCOMC__ - 1100) / 100)
 # define COMPILER_VERSION_MINOR DEC((__WATCOMC__ / 10) % 10)
 # if (__WATCOMC__ % 10) > 0
@@ -79,12 +79,12 @@
 #elif defined(__SUNPRO_CC)
 # define COMPILER_ID "SunPro"
 # if __SUNPRO_CC >= 0x5100
-   /* __SUNPRO_CC = 0xVRRP */
+  /* __SUNPRO_CC = 0xVRRP */
 #  define COMPILER_VERSION_MAJOR HEX(__SUNPRO_CC>>12)
 #  define COMPILER_VERSION_MINOR HEX(__SUNPRO_CC>>4 & 0xFF)
 #  define COMPILER_VERSION_PATCH HEX(__SUNPRO_CC    & 0xF)
 # else
-   /* __SUNPRO_CC = 0xVRP */
+  /* __SUNPRO_CC = 0xVRP */
 #  define COMPILER_VERSION_MAJOR HEX(__SUNPRO_CC>>8)
 #  define COMPILER_VERSION_MINOR HEX(__SUNPRO_CC>>4 & 0xF)
 #  define COMPILER_VERSION_PATCH HEX(__SUNPRO_CC    & 0xF)
@@ -160,7 +160,7 @@
 # define COMPILER_VERSION_MINOR DEC(__clang_minor__)
 # define COMPILER_VERSION_PATCH DEC(__clang_patchlevel__)
 # if defined(_MSC_VER)
-   /* _MSC_VER = VVRR */
+  /* _MSC_VER = VVRR */
 #  define SIMULATE_VERSION_MAJOR DEC(_MSC_VER / 100)
 #  define SIMULATE_VERSION_MINOR DEC(_MSC_VER % 100)
 # endif
@@ -175,7 +175,7 @@
 # define COMPILER_VERSION_MINOR DEC(__clang_minor__)
 # define COMPILER_VERSION_PATCH DEC(__clang_patchlevel__)
 # if defined(_MSC_VER)
-   /* _MSC_VER = VVRR */
+  /* _MSC_VER = VVRR */
 #  define SIMULATE_VERSION_MAJOR DEC(_MSC_VER / 100)
 #  define SIMULATE_VERSION_MINOR DEC(_MSC_VER % 100)
 # endif
@@ -201,10 +201,10 @@
 # define COMPILER_VERSION_MINOR DEC(_MSC_VER % 100)
 # if defined(_MSC_FULL_VER)
 #  if _MSC_VER >= 1400
-    /* _MSC_FULL_VER = VVRRPPPPP */
+  /* _MSC_FULL_VER = VVRRPPPPP */
 #   define COMPILER_VERSION_PATCH DEC(_MSC_FULL_VER % 100000)
 #  else
-    /* _MSC_FULL_VER = VVRRPPPP */
+  /* _MSC_FULL_VER = VVRRPPPP */
 #   define COMPILER_VERSION_PATCH DEC(_MSC_FULL_VER % 10000)
 #  endif
 # endif
