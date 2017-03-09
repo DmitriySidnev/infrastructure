@@ -1,4 +1,5 @@
-#include "add.h"
+#include "add_mul.h"
+#include "Merge_sort.h"
 #include <iostream>
 
 int main() {
