@@ -26,7 +26,7 @@ class MyHash::hash_mix : hash {
   std::vector<std::pair<int, int>> buf;
 
  public:
-   explicit hash_mix(int a = 1000) : buf(size) {}
+  explicit hash_mix(int a = 1000) : buf(size) {}
 };
 
 class MyHash::hash_chain : hash {
