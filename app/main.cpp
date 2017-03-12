@@ -1,6 +1,6 @@
+#include "add.h"
 #include <iostream>
-#include "hash_func.h"
 
 int main() {
-  std::cout << "Hash complete" << std::endl;
+  std::cout << "2 + 2 = " << add(2, 2) << std::endl;
 }
