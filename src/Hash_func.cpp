@@ -25,13 +25,13 @@ class MyHash::hash{
 class MyHash::hash_mix : hash {
   std::vector<std::pair<int, int>> buf;
 
-  public:
+ public:
     hash_mix(int a) : hash(a), buf(size) {}
 };
 
 class MyHash::hash_chain : hash {
   std::vector<std::list<std::pair<int, int>>> buf;
-private:
+ private:
   std::list<std::pair<int, int>>::iterator find(int key) {
     std::list<std::pair<int, int>>::iterator it = buf[key].begin();
 
@@ -45,7 +45,7 @@ private:
     return it;
   }
 
-public:
+ public:
   hash_chain() {}
   hash_chain(int a) : hash(a), buf(size) {}
 
