@@ -3,13 +3,14 @@
 #include <list>
 
 class MyHash::hash{
- 
  protected:
   int key;
   int size = 1000;
   const int step = 37;
   hash() {}
-  hash(int a) : size(a) {}
+  hash(int a) {
+    size = a;
+  }
 
   int H(int key) {
     int key_first = key;
