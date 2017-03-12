@@ -22,4 +22,7 @@ TEST(Hash_table2, IsHashTable_Remove_OK) {
   EXPECT_EQ(k.get(104), 12);
   k.remove(104);
   EXPECT_EQ(k.get(104), 0);
+  k.insert(101, 34);
+  EXPECT_EQ(k.get(101), 34);
+  EXPECT_EQ(k.get(1), 3);
 }
