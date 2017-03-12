@@ -11,7 +11,7 @@ class hash {
   const int step = 37;
 
  protected:
-  explicit hash() {}
+  hash() {}
   int H(int key);
 };
 
@@ -44,6 +44,6 @@ class hash_chain : hash {
   void remove(int key);
   int get(int key);
 };
-}
+}  // namespace MyHash
 
 #endif  // INCLUDE_HASH_FUNC_H_
