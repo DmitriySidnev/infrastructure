@@ -31,6 +31,7 @@ class MyHash::hash_mix : hash {
 
 class MyHash::hash_chain : hash {
   std::vector<std::list<std::pair<int, int>>> buf;
+
  private:
   std::list<std::pair<int, int>>::iterator find(int key) {
     std::list<std::pair<int, int>>::iterator it = buf[key].begin();
@@ -49,38 +50,39 @@ class MyHash::hash_chain : hash {
   hash_chain() {}
   hash_chain(int a) : hash(a), buf(size) {}
 
-  void insert(int key, int value) { // insert value with key
+  void insert(int key, int value) {  // insert value with key
     key = H(key);
-    if (find(key) == buf[key].end()){
+    if (find(key) == buf[key].end()) {
       buf[key].list::push_back(std::make_pair(key, value));
-    }
-    else {
+    } else {
       std::list<std::pair<int, int>>::iterator it = find(key);
       (*it).second = value;
     }
   }
 
-  void remove(int key) { // delete entry with key
-    if (H(key) == NULL)
+  void remove(int key) {  // delete entry with key
+    if (H(key) == NULL) {
       return;
-    else key = H(key);
-
+    } else {
+      key = H(key);
+    }
     std::list<std::pair<int, int>>::iterator it = find(key);
-    if (it != buf[key].end())
+    if (it != buf[key].end()) {
       buf[key].list::erase(it);
-
+    }
   }
 
-  int get(int key) { // get entry with key
-    if (H(key) == NULL)
+  int get(int key) {  // get entry with key
+    if (H(key) == NULL) {
       return NULL;
-    else key = H(key);
-
+    } else {
+      key = H(key);
+    }
     std::list<std::pair<int, int>>::iterator it = find(key);
-    if (it != buf[key].end())
+    if (it != buf[key].end()) {
       return (*it).second;
-    else
+    } else {
       return NULL;
+    }
   }
-
 };
