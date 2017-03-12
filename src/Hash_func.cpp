@@ -60,11 +60,7 @@ class MyHash::hash_chain : hash {
   }
 
   void remove(int key) {  // delete entry with key
-    if (H(key) == NULL) {
-      return;
-    } else {
-      key = H(key);
-    }
+    key = H(key);
     std::list<std::pair<int, int>>::iterator it = find(key);
     if (it != buf[key].end()) {
       buf[key].list::erase(it);
@@ -72,16 +68,12 @@ class MyHash::hash_chain : hash {
   }
 
   int get(int key) {  // get entry with key
-    if (H(key) == NULL) {
-      return NULL;
-    } else {
-      key = H(key);
-    }
+    key = H(key);
     std::list<std::pair<int, int>>::iterator it = find(key);
     if (it != buf[key].end()) {
       return (*it).second;
     } else {
-      return NULL;
+      return 0;
     }
   }
 };
