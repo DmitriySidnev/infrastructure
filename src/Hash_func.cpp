@@ -7,8 +7,8 @@ class MyHash::hash{
   int key;
   int size = 1000;
   const int step = 37;
-  hash() {}
-  hash(int a) {
+
+  hash(int a = 1000) {
     size = a;
   }
 
@@ -26,7 +26,7 @@ class MyHash::hash_mix : hash {
   std::vector<std::pair<int, int>> buf;
 
  public:
-    hash_mix(int a) : buf(size) {}
+    hash_mix(int a = 1000) : buf(size) {}
 };
 
 class MyHash::hash_chain : hash {
@@ -48,7 +48,7 @@ class MyHash::hash_chain : hash {
 
  public:
   hash_chain() {}
-  hash_chain(int a) : buf(size) {}
+  hash_chain(int a = 1000) : buf(size) {}
 
   void insert(int key, int value) {  // insert value with key
     key = H(key);
