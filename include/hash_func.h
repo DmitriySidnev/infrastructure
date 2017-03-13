@@ -10,7 +10,7 @@ class hash {
   const int step = 37;
 
  protected:
-  hash(int new_size = 1000) : size(new_size) {}
+  explicit hash(int new_size = 1000) : size(new_size) {}
   int hash_func(int key);
 };
 
@@ -34,8 +34,8 @@ class hash_chain : hash {
         }
         ++it;
       }
-      return it;
-    }
+    return it;
+  }
 
  public:
   explicit hash_chain(int new_size = 1000) : hash(new_size), buf(new_size) {}
