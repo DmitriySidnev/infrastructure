@@ -2,39 +2,40 @@
 #include <vector>
 #include <list>
 
-int MyHash::hash::H(int key) {
-  int key_first = key;
+namespace MyHash {
+
+int hash::hash_func(int key) {
   if (key > size - 1) {
     key %= size;
   }
   return key;
 }
 
-void MyHash::hash_chain::insert(int key, int value) {  // insert value with key
-  key = H(key);
-  if (find(key) == buf[key].end()) {
-    buf[key].list::push_back(std::make_pair(key, value));
+void hash_chain::insert(int key, int value) {  // insert value with key
+  int key_new = hash_func(key);
+  if (find(key_new) == buf[key_new].end()) {
+    buf[key_new].list::push_back(std::make_pair(key_new, value));
   } else {
-    std::list<std::pair<int, int>>::iterator it = find(key);
-    (*it).second = value;
+    std::list<std::pair<int, int>>::iterator it = find(key_new);
+    it->second = value;
   }
 }
 
-void MyHash::hash_chain::remove(int key) {  // delete entry with key
-  key = H(key);
-  std::list<std::pair<int, int>>::iterator it = find(key);
-  if (it != buf[key].end()) {
-    buf[key].list::erase(it);
+void hash_chain::remove(int key) {  // delete entry with key
+  int key_new = hash_func(key);
+  std::list<std::pair<int, int>>::iterator it = find(key_new);
+  if (it != buf[key_new].end()) {
+    buf[key_new].list::erase(it);
   }
 }
 
-int MyHash::hash_chain::get(int key) {  // get entry with key
-  key = H(key);
-  std::list<std::pair<int, int>>::iterator it = find(key);
-  if (it != buf[key].end()) {
-    return (*it).second;
+int hash_chain::get(int key) {  // get entry with key
+  int key_new = hash_func(key);
+  std::list<std::pair<int, int>>::iterator it = find(key_new);
+  if (it != buf[key_new].end()) {
+    return it->second;
   } else {
     return 0;
   }
 }
-
+}  // namespace MyHash
