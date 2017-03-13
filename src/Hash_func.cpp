@@ -34,7 +34,7 @@ void hash_chain::remove(std::size_t key) {  // delete entry with key
 
 std::size_t hash_chain::get(std::size_t key) {  // get entry with key
   std::size_t key_new = hash_func(key);
-  std::list<std::pair<std::size_t, std::size_t>>::iterator it = find(key_new, key);
+  std::list<std::pair<size_t, size_t>>::iterator it = find(key_new, key);
   if (it != buf[key_new].end()) {
     return it->second;
   } else {
