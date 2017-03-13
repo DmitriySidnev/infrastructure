@@ -27,11 +27,11 @@ class hash_chain : hash {
   std::vector<std::list<std::pair<std::size_t, std::size_t>>> buf;
 
  private:
-  std::list<std::pair<size_t, size_t>>::iterator find(size_t key) {
+  std::list<std::pair<size_t, size_t>>::iterator find(size_t key, size_t k) {
     std::list<std::pair<size_t, size_t>>::iterator it = buf[key].begin();
 
       while (it != buf[key].end()) {
-        if (it->first == key) {
+        if (it->first == k) {
           return it;
         }
         ++it;

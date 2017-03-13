@@ -15,17 +15,18 @@ namespace MyHash {
 
 void hash_chain::insert(std::size_t key, std::size_t value) {
   std::size_t key_new = hash_func(key);
-  if (find(key_new) == buf[key_new].end()) {
+  std::list<std::pair<size_t, size_t>>::iterator it = find(key_new, key);
+
+  if (it == buf[key_new].end()) {
     buf[key_new].list::push_back(std::make_pair(key_new, value));
   } else {
-    std::list<std::pair<size_t, size_t>>::iterator it = find(key_new);
     it->second = value;
   }
 }
 
 void hash_chain::remove(std::size_t key) {  // delete entry with key
   std::size_t key_new = hash_func(key);
-  std::list<std::pair<std::size_t, std::size_t>>::iterator it = find(key_new);
+  std::list<std::pair<size_t, size_t>>::iterator it = find(key_new, key);
   if (it != buf[key_new].end()) {
     buf[key_new].list::erase(it);
   }
@@ -33,7 +34,7 @@ void hash_chain::remove(std::size_t key) {  // delete entry with key
 
 std::size_t hash_chain::get(std::size_t key) {  // get entry with key
   std::size_t key_new = hash_func(key);
-  std::list<std::pair<std::size_t, std::size_t>>::iterator it = find(key_new);
+  std::list<std::pair<std::size_t, std::size_t>>::iterator it = find(key_new, key);
   if (it != buf[key_new].end()) {
     return it->second;
   } else {
