@@ -12,7 +12,7 @@ class hash {
 
  protected:
   hash() {}
-  int H(int key);
+  int hash_func(int key);
 };
 
 class hash_mix : hash {
@@ -30,7 +30,7 @@ class hash_chain : hash {
     std::list<std::pair<int, int>>::iterator it = buf[key].begin();
 
     while (it != buf[key].end()) {
-      if ((*it).first == key) {
+      if (it->first == key) {
         return it;
       }
       ++it;
