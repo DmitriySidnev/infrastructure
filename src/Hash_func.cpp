@@ -18,7 +18,7 @@ void hash_chain::insert(std::size_t key, std::size_t value) {
   std::list<std::pair<size_t, size_t>>::iterator it = find(key_new, key);
 
   if (it == buf[key_new].end()) {
-    buf[key_new].list::push_back(std::make_pair(key_new, value));
+    buf[key_new].list::push_back(std::make_pair(key, value));
   } else {
     it->second = value;
   }
