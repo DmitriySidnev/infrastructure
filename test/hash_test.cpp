@@ -11,20 +11,20 @@ TEST(Hash_table1, IsHashTable_Insert_OK) {
   EXPECT_EQ(k.get(1), 3);
   EXPECT_EQ(k.get(5), 9);
 
-  for (int i = 1; i < 1003; i++) {
+  for (std::size_t i = 1; i < 1003; i++) {
     std::size_t x = 23 * i;
     k.insert(i, x);
   }
-  for (int i = 1; i < 1003; i++) {
+  for (std::size_t i = 1; i < 1003; i++) {
     std::size_t x = k.get(i);
     std::size_t y = 23 * i;
     EXPECT_EQ(x, y);
   }
 
-  for (int i = 265; i < 643; i++) {
+  for (std::size_t i = 265; i < 643; i++) {
     k.remove(i);
   }
-  for (int i = 265; i < 643; i++) {
+  for (std::size_t i = 265; i < 643; i++) {
     std::size_t x = k.get(i);
     EXPECT_EQ(x, 0);
   }
