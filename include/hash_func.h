@@ -6,27 +6,27 @@
 namespace MyHash {
 class hash {
  public:
-  int size;
-  const int step = 37;
+   size_t size;
+  const size_t step = 37;
 
  protected:
-  explicit hash(int new_size = 1000) : size(new_size) {}
-  int hash_func(int key);
+  explicit hash(size_t new_size = 1000) : size(new_size) {}
+  size_t hash_func(size_t key);
 };
 
 class hash_mix : hash {
-  std::vector<std::pair<int, int>> buf;
+  std::vector<std::pair<size_t, size_t>> buf;
 
  public:
-  explicit hash_mix(int a = 1000) : buf(a) {}
+  explicit hash_mix(size_t a = 1000) : buf(a) {}
 };
 
 class hash_chain : hash {
-  std::vector<std::list<std::pair<int, int>>> buf;
+  std::vector<std::list<std::pair<size_t, size_t>>> buf;
 
  private:
-  std::list<std::pair<int, int>>::iterator find(int key) {
-    std::list<std::pair<int, int>>::iterator it = buf[key].begin();
+  std::list<std::pair<size_t, size_t>>::iterator find(size_t key) {
+    std::list<std::pair<size_t, size_t>>::iterator it = buf[key].begin();
 
       while (it != buf[key].end()) {
         if (it->first == key) {
@@ -38,10 +38,10 @@ class hash_chain : hash {
   }
 
  public:
-  explicit hash_chain(int new_size = 1000) : hash(new_size), buf(new_size) {}
-  void insert(int key, int value);
-  void remove(int key);
-  int get(int key);
+  explicit hash_chain(size_t new_size = 1000) : hash(new_size), buf(new_size) {}
+  void insert(size_t key, size_t value);
+  void remove(size_t key);
+  size_t get(size_t key);
 };
 }  // namespace MyHash
 

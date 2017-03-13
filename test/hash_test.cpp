@@ -11,12 +11,12 @@ TEST(Hash_table1, IsHashTable_Insert_OK) {
   EXPECT_EQ(k.get(5), 9);
 
   for (int i = 1; i < 1003; i++) {
-    int x = 23 * i;
+    size_t x = 23 * i;
     k.insert(i, x);
   }
   for (int i = 1; i < 1003; i++) {
-    int x = k.get(i);
-    int y = 23 * i;
+    size_t x = k.get(i);
+    size_t y = 23 * i;
     EXPECT_EQ(x, y);
   }
 
@@ -24,7 +24,7 @@ TEST(Hash_table1, IsHashTable_Insert_OK) {
     k.remove(i);
   }
   for (int i = 265; i < 643; i++) {
-    int x = k.get(i);
+    size_t x = k.get(i);
     EXPECT_EQ(x, 0);
   }
 }
