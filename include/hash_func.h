@@ -3,6 +3,7 @@
 #include <vector>
 #include <list>
 #include <cstddef>
+using std::size_t;
 
 namespace MyHash {
 class hash {
@@ -11,7 +12,7 @@ class hash {
   const std::size_t step = 37;
 
  protected:
-  explicit hash(std::size_t new_size = 1000) : size(new_size) {}
+  explicit hash(std::size_t new_s = 1000) : size(new_s) {}
   std::size_t hash_func(std::size_t key);
 };
 
@@ -26,8 +27,8 @@ class hash_chain : hash {
   std::vector<std::list<std::pair<std::size_t, std::size_t>>> buf;
 
  private:
-  std::list<std::pair<std::size_t, std::size_t>>::iterator find(std::size_t key) {
-    std::list<std::pair<std::size_t, std::size_t>>::iterator it = buf[key].begin();
+  std::list<std::pair<size_t, size_t>>::iterator find(size_t key) {
+    std::list<std::pair<size_t, size_t>>::iterator it = buf[key].begin();
 
       while (it != buf[key].end()) {
         if (it->first == key) {
@@ -39,7 +40,7 @@ class hash_chain : hash {
   }
 
  public:
-  explicit hash_chain(std::size_t new_size = 1000) : hash(new_size), buf(new_size) {}
+  explicit hash_chain(size_t new_s = 1000) : hash(new_s), buf(new_s) {}
   void insert(std::size_t key, std::size_t value);
   void remove(std::size_t key);
   std::size_t get(std::size_t key);
