@@ -6,7 +6,7 @@
 namespace MyHash {
 class hash {
  public:
-   size_t size;
+  size_t size;
   const size_t step = 37;
 
  protected:
