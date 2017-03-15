@@ -141,7 +141,7 @@ Syntax: cpplint.py [--verbose=#] [--output=vs7] [--filter=-x,+y,...]
       set noparent
       filter=+filter1,-filter2,...
       exclude_files=regex
-      linelength=80
+      linelength=120
 
     "set noparent" option prevents cpplint from traversing directory tree
     upwards looking for more .cfg files in parent directories. This option
@@ -495,7 +495,7 @@ _root = None
 
 # The allowed line length of files.
 # This is set by --linelength flag.
-_line_length = 80
+_line_length = 120
 
 # The allowed extensions for file names
 # This is set by --extensions flag.
