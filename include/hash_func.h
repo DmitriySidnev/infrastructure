@@ -6,44 +6,45 @@
 using std::size_t;
 
 namespace MyHash {
-class hash {
+class Hash {
  public:
   std::size_t size;
   const std::size_t step = 37;
 
  protected:
-  explicit hash(std::size_t new_s = 1000) : size(new_s) {}
+  explicit Hash(std::size_t new_s = 1000) : size(new_s) {}
   std::size_t hash_func(std::size_t key);
 };
 
-class hash_mix : hash {
+class hash_mix : Hash {
   std::vector<std::pair<std::size_t, std::size_t>> buf;
 
  public:
   explicit hash_mix(std::size_t a = 1000) : buf(a) {}
 };
 
-class hash_chain : hash {
+class hash_chain : Hash {
   std::vector<std::list<std::pair<std::size_t, std::size_t>>> buf;
 
  private:
-  std::list<std::pair<size_t, size_t>>::iterator find(size_t key, size_t k) {
+  std::list<std::pair<size_t, size_t>>::iterator find_value(size_t key, size_t k) {
     std::list<std::pair<size_t, size_t>>::iterator it = buf[key].begin();
 
-      while (it != buf[key].end()) {
-        if (it->first == k) {
-          return it;
-        }
-        ++it;
+    while (it != buf[key].end()) {
+      if (it->first == k) {
+        return it;
       }
-    return it;
+      ++it;
+    }
+  return it;
   }
 
  public:
-  explicit hash_chain(size_t new_s = 1000) : hash(new_s), buf(new_s) {}
+  explicit hash_chain(size_t new_s = 1000) : Hash(new_s), buf(new_s) {}
   void insert(std::size_t key, std::size_t value);
   void remove(std::size_t key);
-  std::size_t get(std::size_t key);
+  std::size_t* find(std::size_t key);
+  std::size_t operator[](std::size_t key);
 };
 }  // namespace MyHash
 
