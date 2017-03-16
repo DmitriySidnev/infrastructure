@@ -42,15 +42,11 @@ std::size_t* hash_chain::find(std::size_t key) {  // get entry with key
 }
 
 std::size_t& hash_chain::operator[](std::size_t key) {
-  std::size_t out_val = default_val;
-  std::size_t key_new = hash_func(key);
-  std::list<std::pair<size_t, size_t>>::iterator it = find_value(key_new, key);
-  if (it != buf[key_new].end()) {
-    out_val = it->second;
-    return out_val;
-  } else {
-    hash_chain::insert(key, default_val);
-    return out_val;
+  std::size_t* out_val = find(key);
+  if (out_val == nullptr) {
+    hash_chain::insert(key, default_val); // insert pair(key, value = 0)
   }
+  out_val = find(key);
+  return *out_val;
 }
 }  // namespace MyHash
