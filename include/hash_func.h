@@ -10,6 +10,7 @@ class Hash {
  public:
   std::size_t size;
   const std::size_t step = 37;
+  const std::size_t default_val = 0;
 
  protected:
   explicit Hash(std::size_t new_s = 1000) : size(new_s) {}
@@ -44,7 +45,7 @@ class hash_chain : Hash {
   void insert(std::size_t key, std::size_t value);
   void remove(std::size_t key);
   std::size_t* find(std::size_t key);
-  std::size_t operator[](std::size_t key);
+  std::size_t& operator[](std::size_t key);
 };
 }  // namespace MyHash
 
