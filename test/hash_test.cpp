@@ -45,3 +45,13 @@ TEST(Hash_table2, IsHashTable_Remove_OK) {
   EXPECT_EQ(*(k.find(101)), 34);
   EXPECT_EQ(*(k.find(1)), 3);
 }
+
+TEST(Hash_table3, IsHashTable_operator_OK) {
+  MyHash::hash_chain k;
+  k[1] = 2;
+  EXPECT_EQ(*(k.find(1)), 2);
+  EXPECT_EQ(k[1], 2);
+  std::size_t x = k[1];
+  EXPECT_EQ(x, 2);
+  EXPECT_EQ(k[2], 0);
+}
