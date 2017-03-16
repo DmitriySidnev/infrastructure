@@ -44,7 +44,7 @@ std::size_t* hash_chain::find(std::size_t key) {  // get entry with key
 std::size_t& hash_chain::operator[](std::size_t key) {
   std::size_t* out_val = find(key);
   if (out_val == nullptr) {
-    hash_chain::insert(key, default_val); // insert pair(key, value = 0)
+    hash_chain::insert(key, default_val);  // insert pair(key, value = 0)
   }
   out_val = find(key);
   return *out_val;
