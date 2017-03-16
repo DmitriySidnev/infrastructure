@@ -37,10 +37,10 @@ TEST(Hash_table2, IsHashTable_Remove_OK) {
   k.insert(104, 12);
   k.remove(5);
   EXPECT_EQ(*(k.find(1)), 3);
-  EXPECT_EQ(*(k.find(5)), 0);
+  EXPECT_EQ(k.find(5), nullptr);
   EXPECT_EQ(*(k.find(104)), 12);
   k.remove(104);
-  EXPECT_EQ(*(k.find(104)), 0);
+  EXPECT_EQ(k.find(104), nullptr);
   k.insert(101, 34);
   EXPECT_EQ(*(k.find(101)), 34);
   EXPECT_EQ(*(k.find(1)), 3);
