@@ -7,7 +7,7 @@ class Integer{
 
  public:
   explicit Integer(int v0 = 0) : val(v0) {}
-  explicit Integer (double d){
+  explicit Integer(double d) {
     val = static_cast<int>(d);
   }
 
@@ -15,7 +15,7 @@ class Integer{
     return val;
   }
 
-  //  basic arithmetic operators	
+  //  basic arithmetic operators
   const Integer operator+(const Integer& r) {
     Integer res;
     res.val = val + r.val;
@@ -48,11 +48,11 @@ class Integer{
   }
 
   //  operator increment
-  Integer& operator++(){
+  Integer& operator++() {
     val++;
     return *this;
   }
-  friend Integer operator++(Integer& l, int) {
+  friend Integer& operator++(Integer& l, int) {
     Integer res = l;
     l.val += 1;
     return res;
@@ -103,7 +103,7 @@ class Integer{
   //  operator=
   Integer& operator=(const Integer& r) {
     val = r.val;
-    return *this;	
+    return *this;
   }
   Integer& operator=(int r) {
     val = r;
@@ -122,10 +122,10 @@ class Integer{
   int get() const {
     return val;
   }
-};	
-} //  namespace MyInt
+};
+}  // namespace MyInt
 
-int main(){
+int main() {
   MyInt::Integer x(5), y(3.5), z, xf[10];
   z = x + y;
   int f = z.get();
