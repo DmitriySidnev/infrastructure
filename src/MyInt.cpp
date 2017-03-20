@@ -52,9 +52,9 @@ class Integer{
     val++;
     return *this;
   }
-  friend const Integer operator++(Integer& l, int) {
-    Integer res = l;
-    l.val += 1;
+  const Integer operator++(int) {
+    Integer res = *this;
+    val += 1;
     return res;
   }
 
