@@ -52,7 +52,7 @@ class Integer{
     val++;
     return *this;
   }
-  friend Integer& operator++(Integer& l, int) {
+  friend const Integer operator++(Integer& l, int) {
     Integer res = l;
     l.val += 1;
     return res;
