@@ -1,3 +1,6 @@
+#ifndef INCLUDE_MYINT_H_
+#define INCLUDE_MYINT_H_
+
 #include <iostream>
 
 namespace MyInt {
@@ -30,7 +33,7 @@ class Integer {
   friend Integer operator+(const Integer& l, int r);
   friend Integer operator+(double l, const Integer& r);
   friend Integer operator+(const Integer& l, double r);
-  //Integer& operator[](const Integer& a);
+  // Integer& operator[](const Integer& a);
   Integer& operator=(const Integer& r);
   Integer& operator=(int r);
 
@@ -47,3 +50,5 @@ class Integer {
   }
 };
 }  // namespace MyInt
+
+#endif  // INCLUDE_MYINT_H_H_

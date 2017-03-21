@@ -1,23 +1,22 @@
 #include <gtest/gtest.h>
 #include <myint.h>
 #include <iostream>
-using namespace MyInt;
 
 TEST(MyInt, Operators_is_OK) {
-  Integer x, y, arr[30];
+  MyInt::Integer x, y, arr[30];
   int a = 0, b = 0, c[30];
-  for (Integer i; i != 30; ++i) {
+  for (MyInt::Integer i; i != 30; ++i) {
     arr[i] = x++;
     c[i] = a++;
     y++;
     b++;
-    Integer tmp = arr[i];
+    MyInt::Integer tmp = arr[i];
     EXPECT_EQ(x.get(), a);
     EXPECT_EQ(y.get(), b);
     EXPECT_EQ(tmp.get(), c[i]);
   }
 
-  Integer s1, s2, s3;
+  MyInt::Integer s1, s2, s3;
   s1 = 50;
   s2 = s1 + 50;
   s3 = 100 + s2 + s1 + 50;

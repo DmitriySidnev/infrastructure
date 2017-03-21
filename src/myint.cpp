@@ -34,7 +34,7 @@ Integer& Integer::operator++() {
   val++;
   return *this;
 }
-const Integer Integer::operator++(int) {
+const Integer Integer::operator++(int v) {
   Integer res = *this;
   val += 1;
   return res;
