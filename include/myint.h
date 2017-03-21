@@ -51,4 +51,4 @@ class Integer {
 };
 }  // namespace MyInt
 
-#endif  // INCLUDE_MYINT_H_H_
+#endif  // INCLUDE_MYINT_H_
