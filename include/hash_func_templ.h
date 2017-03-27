@@ -32,7 +32,7 @@ template<class T1, class T2> class hash_chain : Hash<T1> {
 
  private:
   typename std::list<std::pair<T1, T2>>::iterator find_value(const size_t key, const  T1 key_vis) {
-    std::list<std::pair<T1, T2>>::iterator it = buf[key].begin();
+    typename std::list<std::pair<T1, T2>>::iterator it = buf[key].begin();
 
     while (it != buf[key].end()) {
       if (it->first == key_vis) {
@@ -48,7 +48,7 @@ template<class T1, class T2> class hash_chain : Hash<T1> {
 
   void insert(const T1 key, const T2 value) {
     std::size_t key_new = hash_func(&key);
-    std::list<std::pair<T1, T2>>::iterator it = find_value(key_new, key);
+    typename std::list<std::pair<T1, T2>>::iterator it = find_value(key_new, key);
 
     if (it == buf[key_new].end()) {
       buf[key_new].list::push_back(std::make_pair(key, value));
@@ -59,7 +59,7 @@ template<class T1, class T2> class hash_chain : Hash<T1> {
 
   void remove(T1 key) {
     std::size_t key_new = hash_func(&key);
-    std::list<std::pair<T1, T2>>::iterator it = find_value(key_new, key);
+    typename std::list<std::pair<T1, T2>>::iterator it = find_value(key_new, key);
     if (it != buf[key_new].end()) {
       buf[key_new].list::erase(it);
     }
@@ -68,7 +68,7 @@ template<class T1, class T2> class hash_chain : Hash<T1> {
   T2* find(const T1 key) {
     T2* out_val = nullptr;
     std::size_t key_new = hash_func(&key);
-    std::list<std::pair<T1, T2>>::iterator it = find_value(key_new, key);
+    typename std::list<std::pair<T1, T2>>::iterator it = find_value(key_new, key);
     if (it != buf[key_new].end()) {
       out_val = &it->second;
       return out_val;
