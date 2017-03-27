@@ -6,7 +6,7 @@
 using std::size_t;
 
 namespace MyHash {
-  template<class T1> class Hash {
+template<class T1> class Hash {
  public:
   std::size_t size;
   const std::size_t step = 37;
@@ -31,8 +31,8 @@ template<class T1, class T2> class hash_chain : Hash<T1> {
   std::vector<std::list<std::pair<T1, T2>>> buf;
 
  private:
-   typename std::list<std::pair<T1, T2>>::iterator find_value(const size_t key, const  T1 key_vis) {
-     std::list<std::pair<T1, T2>>::iterator it = buf[key].begin();
+  typename std::list<std::pair<T1, T2>>::iterator find_value(const size_t key, const  T1 key_vis) {
+    std::list<std::pair<T1, T2>>::iterator it = buf[key].begin();
 
     while (it != buf[key].end()) {
       if (it->first == key_vis) {
@@ -40,7 +40,7 @@ template<class T1, class T2> class hash_chain : Hash<T1> {
       }
       ++it;
     }
-  return it;
+    return it;
   }
 
  public:
@@ -52,8 +52,7 @@ template<class T1, class T2> class hash_chain : Hash<T1> {
 
     if (it == buf[key_new].end()) {
       buf[key_new].list::push_back(std::make_pair(key, value));
-    }
-    else {
+    } else {
       it->second = value;
     }
   }
@@ -73,8 +72,7 @@ template<class T1, class T2> class hash_chain : Hash<T1> {
     if (it != buf[key_new].end()) {
       out_val = &it->second;
       return out_val;
-    }
-    else {
+    } else {
       return nullptr;
     }
   }
