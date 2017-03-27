@@ -1,4 +1,4 @@
-#include "hash_func.h"
+#include "hash_func_templ.h"
 #include <vector>
 #include <list>
 #include <cstddef>
