@@ -51,7 +51,7 @@ template<class T1, class T2> class hash_chain : Hash<T1> {
     typename std::list<std::pair<T1, T2>>::iterator it = find_value(key_new, key);
 
     if (it == buf[key_new].end()) {
-      typename buf[key_new].list::push_back(std::make_pair(key, value));
+      buf[key_new].push_back(std::make_pair(key, value));
     } else {
       it->second = value;
     }
@@ -61,7 +61,7 @@ template<class T1, class T2> class hash_chain : Hash<T1> {
     std::size_t key_new = hash_func(&key);
     typename std::list<std::pair<T1, T2>>::iterator it = find_value(key_new, key);
     if (it != buf[key_new].end()) {
-      typename buf[key_new].list::erase(it);
+      buf[key_new].erase(it);
     }
   }
 
