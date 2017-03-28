@@ -32,7 +32,7 @@ TEST(Hash_table1, IsHashTable_Insert_OK) {
 }
 
 TEST(Hash_table2, IsHashTable_Remove_and_string_OK) {
-  MyHash::hash_chain<int, std::string> k;
+  MyHash::hash_chain<int, std::string> k(50, MyHash::functMy<int>);
   k.insert(1, "first");
   k.insert(5, "fifth");
   k.insert(104, "one zero four");
