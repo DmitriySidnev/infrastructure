@@ -34,7 +34,7 @@ template<class T1> class Hash {
   const size_t default_val = 0;
 
  protected:
-  explicit Hash(size_t new_s = 1000, std::function<size_t(const T1&, size_t)> f = functDef<T1>) : 
+  explicit Hash(size_t new_s = 1000, std::function<size_t(const T1&, size_t)> f = functDef<T1>) :
   size(new_s), hash_func(f) {}
 };
 
@@ -63,7 +63,7 @@ template<class T1, class T2> class hash_chain : public Hash<T1> {
   }
 
  public:
-  explicit hash_chain(size_t new_s = 1000, std::function<size_t(const T1&, size_t)> f = functDef<T1>) : 
+  explicit hash_chain(size_t new_s = 1000, std::function<size_t(const T1&, size_t)> f = functDef<T1>) :
   Hash<T1>(new_s, f), buf(new_s) {}
 
   void insert(const T1 key, const T2 value) {
