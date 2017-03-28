@@ -20,8 +20,7 @@ size_t functMy(const T1& key, size_t size = 1000) {
   tmp = (tmp % size) + 37;
   if (tmp >= size) {
     tmp = tmp = size - 1;
-  }
-  else if (tmp < 0) {
+  } else if (tmp < 0) {
     tmp = 0;
   }
   return tmp;
@@ -33,9 +32,10 @@ template<class T1> class Hash {
   std::function<size_t(const T1&, size_t)> hash_func;
   const size_t step = 37;
   const size_t default_val = 0;
-  
+
  protected:
-  explicit Hash(size_t new_s = 1000, std::function<size_t(const T1&, size_t)> f = functDef<T1>) : size(new_s), hash_func(f) {}
+  explicit Hash(size_t new_s = 1000, std::function<size_t(const T1&, size_t)> f = functDef<T1>) : 
+  size(new_s), hash_func(f) {}
 };
 
 template<class T1, class T2> class hash_mix : Hash<T1> {
@@ -47,7 +47,7 @@ template<class T1, class T2> class hash_mix : Hash<T1> {
 
 template<class T1, class T2> class hash_chain : public Hash<T1> {
   std::vector<std::list<std::pair<T1, T2>>> buf;
-  //using hash_cell = std::list<std::pair<T1, T2>>::iterator;
+  // using hash_cell = std::list<std::pair<T1, T2>>::iterator;
 
  private:
   typename std::list<std::pair<T1, T2>>::iterator find_value(const size_t key, const  T1 key_vis) {
@@ -63,7 +63,9 @@ template<class T1, class T2> class hash_chain : public Hash<T1> {
   }
 
  public:
-  explicit hash_chain(size_t new_s = 1000, std::function<size_t(const T1&, size_t)> f = functDef<T1>) : Hash<T1>(new_s, f), buf(new_s) {}
+  explicit hash_chain(size_t new_s = 1000, std::function<size_t(const T1&, size_t)> f = functDef<T1>) : 
+  Hash<T1>(new_s, f), buf(new_s) {}
+
   void insert(const T1 key, const T2 value) {
     size_t key_new = Hash<T1>::hash_func(key, Hash<T1>::size);
     typename std::list<std::pair<T1, T2>>::iterator it = find_value(key_new, key);
