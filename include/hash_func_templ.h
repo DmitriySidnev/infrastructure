@@ -7,91 +7,110 @@
 using std::size_t;
 
 namespace MyHash {
-template<class T1>
-size_t functDef(const T1& key, size_t size = 1000) {
-  size_t tmp = static_cast<size_t>(key);
-  tmp %= size;
-  return tmp;
+
+template<class Key>
+size_t defaultHashFunction(const Key& key, size_t size = 1000) {
+  return static_cast<size_t>(key) % size;
 }
 
-template<class T1>
-size_t functMy(const T1& key, size_t size = 1000) {
-  size_t tmp = static_cast<size_t>(key);
-  tmp = (tmp % size) + 37;
-  if (tmp >= size) {
-    tmp = tmp = size - 1;
-  } else if (tmp < 0) {
-    tmp = 0;
+template<>
+size_t defaultHashFunction<std::string>(const std::string& key, size_t size) {
+  if (key.size() == 0) {
+    return 0;
+  } else {
+    return static_cast<size_t>(key[0] * key[key.size() - 1] * key[key.size() / 2]) % size;
   }
-  return tmp;
 }
 
-template<class T1> class Hash {
+template<>
+size_t defaultHashFunction<float>(const float& key, size_t size) {
+  const size_t* hash = reinterpret_cast<const size_t*>(&key);
+  return *hash % size;
+}
+
+template<class Key>
+size_t MyHashFunction(const Key& key, size_t size = 1023) {
+  return (static_cast<size_t>(key) & size) % size;
+}
+
+template<>
+size_t MyHashFunction<float>(const float& key, size_t size) {
+  const size_t* hash = reinterpret_cast<const size_t*>(&key);
+  return (*hash & size) % size;
+}
+
+template<class Key>
+class Hash {
  public:
+  using HashFunction = std::function<size_t(const Key&, size_t)>;
   size_t size;
-  std::function<size_t(const T1&, size_t)> hash_func;
-  const size_t step = 37;
-  const size_t default_val = 0;
+  HashFunction hash_func;
 
  protected:
-  explicit Hash(size_t new_s = 1000, std::function<size_t(const T1&, size_t)> f = functDef<T1>) :
-  size(new_s), hash_func(f) {}
+  explicit Hash(size_t table_size = 1000, HashFunction f = defaultHashFunction<Key>) :
+    size(table_size), hash_func(f) {
+  }
 };
 
-template<class T1, class T2> class hash_mix : Hash<T1> {
-  std::vector<std::pair<T1, T2>> buf;
+template<class Key, class Value>
+class HashMix : Hash<Key> {
+  std::vector<std::pair<Key, Value>> table;
+  const size_t step = 37;
 
  public:
-  explicit hash_mix(size_t a = 1000) : buf(a) {}
+  explicit HashMix(size_t table_size = 1000) : table(table_size) {}
 };
 
-template<class T1, class T2> class hash_chain : public Hash<T1> {
-  std::vector<std::list<std::pair<T1, T2>>> buf;
-  // using hash_cell = std::list<std::pair<T1, T2>>::iterator;
+template<class Key, class Value>
+class HashChain : public Hash<Key> {
+  std::vector<std::list<std::pair<Key, Value>>> table;
+  using hash_cell = typename std::list<std::pair<Key, Value>>::iterator;
+  using HashFunction = std::function<size_t(const Key&, size_t)>;
 
  private:
-  typename std::list<std::pair<T1, T2>>::iterator find_value(const size_t key, const  T1 key_vis) {
-    typename std::list<std::pair<T1, T2>>::iterator it = buf[key].begin();
+  hash_cell find_value(const size_t hash, const Key key) {
+    auto it = table[hash].begin();
 
-    while (it != buf[key].end()) {
-      if (it->first == key_vis) {
+    while (it != table[hash].end()) {
+      if (it->first == key) {
         return it;
       }
       ++it;
     }
-    return it;
+  return it;
   }
 
  public:
-  explicit hash_chain(size_t new_s = 1000, std::function<size_t(const T1&, size_t)> f = functDef<T1>) :
-  Hash<T1>(new_s, f), buf(new_s) {}
+  explicit HashChain(size_t table_size = 1000, HashFunction f = defaultHashFunction<Key>) :
+    Hash<Key>(table_size, f), table(table_size) {
+  }
 
-  void insert(const T1 key, const T2 value) {
-    size_t key_new = Hash<T1>::hash_func(key, Hash<T1>::size);
-    typename std::list<std::pair<T1, T2>>::iterator it = find_value(key_new, key);
+  void insert(const Key key, const Value value) {
+    size_t hash = Hash<Key>::hash_func(key, Hash<Key>::size);
+    hash_cell it = find_value(hash, key);
 
-    if (it == buf[key_new].end()) {
-      buf[key_new].push_back(std::make_pair(key, value));
+    if (it == table[hash].end()) {
+      table[hash].push_back(std::make_pair(key, value));
     } else {
       it->second = value;
     }
   }
 
-  void remove(T1 key) {
-    size_t key_new = Hash<T1>::hash_func(key, Hash<T1>::size);
-    typename std::list<std::pair<T1, T2>>::iterator it = find_value(key_new, key);
+  void remove(Key key) {
+    size_t hash = Hash<Key>::hash_func(key, Hash<Key>::size);
+    auto it = find_value(hash, key);
 
-    if (it != buf[key_new].end()) {
-      buf[key_new].erase(it);
+    if (it != table[hash].end()) {
+      table[hash].erase(it);
     }
   }
 
-  T2* find(const T1 key) {
-    T2* out_val = nullptr;
-    size_t key_new = Hash<T1>::hash_func(key, Hash<T1>::size);
-    typename std::list<std::pair<T1, T2>>::iterator it = find_value(key_new, key);
+  Value* find(const Key key) {
+    Value* out_val = nullptr;
+    size_t hash = Hash<Key>::hash_func(key, Hash<Key>::size);
+    auto it = find_value(hash, key);
 
-    if (it != buf[key_new].end()) {
+    if (it != table[hash].end()) {
       out_val = &it->second;
       return out_val;
     } else {
@@ -99,10 +118,10 @@ template<class T1, class T2> class hash_chain : public Hash<T1> {
     }
   }
 
-  T2& operator[](const T1 key) {
-    T2* out_val = find(key);
+  Value& operator[](const Key key) {
+    Value* out_val = find(key);
     if (out_val == nullptr) {
-      hash_chain::insert(key, T2());  // insert pair(key, value = 0)
+      HashChain::insert(key, Value());
     }
     out_val = find(key);
     return *out_val;
