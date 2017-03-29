@@ -8,10 +8,12 @@
 #include <vector>
 
 TEST(Hash_table1, IsHashTable_OK) {
+  /*
   MyHash::HashChain<int, int> sample(100, [&](const int& key, size_t size) {
     return (key * 37) % size;
   });
-
+  */
+  MyHash::HashChain<int, int> sample(100);
   std::random_device rnd;
   std::map<int, int> mapHash;
 
@@ -25,7 +27,6 @@ TEST(Hash_table1, IsHashTable_OK) {
   for (auto hash : mapHash) {
     EXPECT_EQ(sample[hash.first], hash.second);
   }
-  
 }
 
 TEST(Hash_table2, IsHashTable_string_OK) {
@@ -50,11 +51,13 @@ TEST(Hash_table2, IsHashTable_string_OK) {
 }
 
 TEST(Hash_table3, IsHashTable_operator_OK) {
+  /*
   MyHash::HashChain<float, unsigned int> sample(500, [&](const float& key, size_t size) {
     const size_t* hash = reinterpret_cast<const size_t*>(&key);
     return *hash % size;
   });
-
+  */
+  MyHash::HashChain<float, unsigned int> sample(500);
   std::random_device rnd;
   std::map<float, int> mapHash;
 
@@ -79,7 +82,6 @@ TEST(Hash_table4, IsHashTable_char_OK) {
   for (int j = 0; j < 1000; j++) {
     char rnd_key = static_cast<char>(rnd());
     unsigned int rnd_val = rnd();
-    //sample[rnd_key] = rnd_val;
     sample.insert(rnd_key, rnd_val);
     mapHash[rnd_key] = rnd_val;
   }
