@@ -5,7 +5,7 @@ file(GLOB HPPS ../include/*.h ../include/*.hpp)
 
 find_package(Threads)
 
-set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
+#set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
 
 include_directories(../3rdparty/gtest/include)
 link_directories(${CMAKE_LIBRARY_OUTPUT_DIRECTORY})
